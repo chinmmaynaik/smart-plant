@@ -1,0 +1,2 @@
+# Load Sysbuild board Kconfig descriptions.
+osource "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/boards/espressif/esp32_devkitc/Kconfig.sysbuild"
