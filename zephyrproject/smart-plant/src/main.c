@@ -10,32 +10,32 @@
 #define STACKSIZE 1024
 #define LED_THREAD_PRIORITY 7
 
-K_TIMER_DEFINE(led_timer, NULL, NULL);
+// K_TIMER_DEFINE(led_timer, NULL, NULL);
 
 /* The devicetree node identifier for the "led0" alias. */
-#define LED0_NODE DT_ALIAS(led0)
+// #define LED0_NODE DT_ALIAS(led0)
 
-static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
+// static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
-void led_thread(void)
-{
-    int ret;
-    bool led_state = true;
+// void led_thread(void)
+// {
+//     int ret;
+//     bool led_state = true;
 
-    while (1) {
-        k_timer_status_sync(&led_timer);
+//     while (1) {
+//         k_timer_status_sync(&led_timer);
 
-        ret = gpio_pin_toggle_dt(&led);
-        if (ret < 0) {
-            return; 
-        }
+//         ret = gpio_pin_toggle_dt(&led);
+//         if (ret < 0) {
+//             return; 
+//         }
 
-        led_state = !led_state;
-        printf("LED state: %s\n", led_state ? "ON" : "OFF");
-    }
-}
+//         led_state = !led_state;
+//         printf("LED state: %s\n", led_state ? "ON" : "OFF");
+//     }
+// }
 
-K_THREAD_DEFINE(led_thread_id, STACKSIZE, led_thread, NULL, NULL, NULL, LED_THREAD_PRIORITY, 0, 0);
+// K_THREAD_DEFINE(led_thread_id, STACKSIZE, led_thread, NULL, NULL, NULL, LED_THREAD_PRIORITY, 0, 0);
 
 int main(void)
 {
@@ -110,7 +110,7 @@ int main(void)
 
         k_sleep(SENSOR_INTERVAL);
 
-        return 0;
+        
     }
-
+    return 0;
 }

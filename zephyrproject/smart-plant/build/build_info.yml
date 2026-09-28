@@ -1,0 +1,64 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant'
+    source-dir: 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant'
+  board:
+    name: 'esp32_devkitc'
+    path:
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/boards/espressif/esp32_devkitc'
+    qualifiers: 'esp32/procpu'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu.dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/app.overlay'
+    include-dirs:
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/ambiq/dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/atmel/include'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/bouffalolab/include'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/gigadevice/include'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/infineon/dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/microchip/include'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/microchip/dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/nuvoton/dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/nxp/dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/stm32/dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/modules/hal/ti/dts'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/include'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/common'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/vendor'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/tricore'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/rx'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/x86'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/xtensa'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/sparc'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/riscv'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/posix'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/arm64'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/arm'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/arc'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts'
+    user-files:
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/app.overlay'
+  kconfig:
+    files:
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu_defconfig'
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/prj.conf'
+    user-files:
+     - 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/Chinmay/zws/sdks/zephyr-sdk-1.0.1'
+  zephyr:
+    version: '4.4.99'
+    zephyr-base: 'C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\Chinmay\Desktop\Chinmay\smart-plant-project\zephyrproject\.venv\Scripts\west build -p always -b esp32_devkitc/esp32/procpu .'
+  topdir: 'C:\Users\Chinmay\Desktop\Chinmay\smart-plant-project\zephyrproject'
+  version: '1.5.0'

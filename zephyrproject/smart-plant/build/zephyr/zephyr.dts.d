@@ -1,0 +1,33 @@
+empty_file.o: \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/misc/empty_file.c \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc_procpu.dts \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/xtensa/espressif/esp32/esp32.dtsi \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/xtensa/espressif/esp32/esp32_common.dtsi \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/common/mem.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/common/freq.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/xtensa/xtensa.dtsi \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/common/skeleton.dtsi \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/adc/adc.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/dt-util.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_macro.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_internal.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_loops.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_listify.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_internal_is_eq.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_inc.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_dec.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/sys/util_internal_util_x2.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/gpio/gpio.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/i2c/i2c.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/clock/esp32_clock.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/interrupt-controller/esp-xtensa-intmux.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-pinctrl.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp-pinctrl-common.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/pinctrl/esp32-gpio-sigmap.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/pwm/pwm.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/boards/espressif/esp32_devkitc/esp32_devkitc-pinctrl.dtsi \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/input/input-event-codes.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/include/zephyr/dt-bindings/input/esp32-touch-sensor-input.h \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x1000_amp.dtsi \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/dts/vendor/espressif/partitions_0x1000_amp_4M.dtsi \
+ C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/app.overlay

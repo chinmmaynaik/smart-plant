@@ -1,0 +1,85 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      The target system is: Generic - 4.4.99 - xtensa
+      The host system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/Chinmay/zws/sdks/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/build/CMakeFiles/3.29.0-rc1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/kernel.cmake:172 (project)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Users/Chinmay/zws/sdks/zephyr-sdk-1.0.1/gnu/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/smart-plant/build/CMakeFiles/3.29.0-rc1/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1141 (message)"
+      - "C:/Users/Chinmay/zws/zelp/qp/qpc_8.1.1/qtools/share/cmake-3.29/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/kernel.cmake:178 (enable_language)"
+      - "C:/Users/Chinmay/Desktop/Chinmay/smart-plant-project/zephyrproject/zephyr/cmake/modules/zephyr_default.cmake:133 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)"
+      - "C:/ncs/v2.7.0/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)"
+      - "CMakeLists.txt:3 (find_package)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      xtensa-espressif_esp32_zephyr-elf-gcc.exe (Zephyr SDK 1.0.1) 14.3.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+...

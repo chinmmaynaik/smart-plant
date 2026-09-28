@@ -13,11 +13,11 @@
 // smoothing factor for the exponential moving average filter
 #define FILTER_ALPHA 4
 
-static uint32_t filtered_value =0;
+static int32_t filtered_value =0;
 static bool filter_initialized = false;
 
-uint32_t calibration_dry = 0;
-uint32_t calibration_wet = 0;
+uint32_t calibration_dry = 3000;
+uint32_t calibration_wet = 1500;
 
 static const struct adc_dt_spec soil_adc = ADC_DT_SPEC_GET_BY_IDX(ADC_NODE, 0);
 
@@ -34,25 +34,25 @@ void soil_sensor_set_calibration(uint32_t dry_raw, uint32_t wet_raw) {
     filter_initialized = false;
 }
 
-uint32_t moisture_from_raw (uint32_t raw)
+static int32_t moisture_from_raw(int32_t raw)
 {
-    uint32_t numerator = (raw - calibration_dry) * 100;
-    
-    uint32_t denominator = calibration_wet - calibration_dry;
+    int32_t numerator =
+        (raw - calibration_dry) * 100;
 
-    uint32_t percentage = numerator / denominator;
+    int32_t denominator =
+        calibration_wet - calibration_dry;
 
-    if(percentage < 0)
-    {
-        percentage = 0;
+    int32_t percent = numerator / denominator;
+
+    if (percent < 0) {
+        percent = 0;
     }
 
-    if(percentage > 100)
-    {
-        percentage = 100;
+    if (percent > 100) {
+        percent = 100;
     }
 
-    return percentage;
+    return percent;
 }
 int soil_sensor_init(void) {
 
@@ -87,7 +87,7 @@ int soil_sensor_read(soil_sensor_data_t *data) {
 
     for(int i = 0; i < SAMPLE_COUNT; i++){
 
-        uint32_t sample;
+        int16_t sample;
         
 
         struct adc_sequence sequence = {
@@ -96,17 +96,24 @@ int soil_sensor_read(soil_sensor_data_t *data) {
         };
     
         ret = adc_sequence_init_dt(&soil_adc, &sequence);
+
         if (ret < 0) {
-            return ret;
-        }
-    
-        ret = adc_read_dt(&soil_adc, &sequence);
-        if (ret < 0) {
+            printk("ADC sequence initialization failed: %d\n", ret);
             return ret;
         }
 
-        // why this what does it do
+        ret = adc_read_dt(&soil_adc, &sequence);
+
+        if (ret < 0) {
+            printk("ADC read failed: %d\n", ret);
+            return ret;
+        }
+
+        /* Print the actual ADC result. */
+        // printk("ADC DEBUG: sample = %d\n", sample);
+
         if (sample < 0 || sample > 4095) {
+            printk("ADC value out of range: %d\n", sample);
             return -ERANGE;
         }
 
@@ -119,10 +126,11 @@ int soil_sensor_read(soil_sensor_data_t *data) {
         filtered_value = raw;
         filter_initialized = true;
     }else{
-        filtered_value =+ (raw - filtered_value)/FILTER_ALPHA;
+        filtered_value += (raw - filtered_value)/FILTER_ALPHA;
     }
 
     data->filtered_adc = filtered_value;
+    printk("adc filtered value: %d\n", filtered_value);
     data->moisture_percentage = moisture_from_raw(filtered_value);
     data->raw_adc = raw;
     data->timestamp = k_uptime_get(); // Get the current time in milliseconds
